@@ -48,3 +48,43 @@
     }
   }
 }
+
+.container {
+  width: $screen-lg;
+  margin: 0 auto;
+
+  @media (max-width: $screen-lg) {
+    width: 100vw;
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+
+  @media (max-width: $screen-sm) {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: $space-4;
+  }
+}
+
+.card {
+  position: relative;
+  height: fit-content;
+  padding: $space-4;
+  border-radius: 1.5rem;
+
+  &__icon {
+    position: absolute;
+    left: -$space-4;
+    top: -$space-2;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  &__title {
+    margin-bottom: $space-4;
+  }
+}

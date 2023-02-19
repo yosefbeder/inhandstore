@@ -1,16 +1,6 @@
 .header {
   background: linear-gradient($color-purple, $color-purple-very-dark);
 
-  &__nav,
-  &__hero {
-    width: $screen-lg;
-    margin: 0 auto;
-
-    @media (max-width: $screen-lg) {
-      width: 100vw;
-    }
-  }
-
   &__nav {
     display: flex;
     list-style: none;
