@@ -1,18 +1,7 @@
 .features {
-  padding: $space-8 $space-2;
-  text-align: center;
   background-color: $color-purple-extremely-light;
 
-  &__title {
-    margin-bottom: $space-8;
-  }
-
   &__card {
-    width: 30%;
     background-color: $color-purple-very-light;
-
-    @media (max-width: $screen-sm) {
-      width: max(50%, 20rem);
-    }
   }
 }

@@ -1,0 +1,12 @@
+.reviews {
+  background: linear-gradient($color-purple, $color-purple-very-dark);
+
+  &__title,
+  &__card-title {
+    color: $color-purple-extremely-light;
+  }
+
+  &__card-description {
+    color: $color-purple-very-light;
+  }
+}
