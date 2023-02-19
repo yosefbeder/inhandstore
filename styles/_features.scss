@@ -1,0 +1,51 @@
+.features {
+  width: $screen-lg;
+  margin: 0 auto;
+  padding: $space-8 $space-2;
+  text-align: center;
+
+  @media (max-width: $screen-lg) {
+    width: 100vw;
+  }
+
+  &__title {
+    margin-bottom: $space-8;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: $screen-sm) {
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      gap: $space-4;
+    }
+  }
+
+  &__card {
+    position: relative;
+    width: 30%;
+    background-color: $color-purple-very-light;
+    padding: $space-4;
+    border-radius: 1.5rem;
+    height: fit-content;
+
+    @media (max-width: $screen-sm) {
+      width: max(50%, 20rem);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    left: -$space-4;
+    top: -$space-2;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  &__card-title {
+    margin-bottom: $space-4;
+  }
+}
