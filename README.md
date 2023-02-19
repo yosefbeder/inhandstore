@@ -1,2 +1,3 @@
-# inhand-landing-page
+# inhandstore
+
 A landing page for inhandstore.

@@ -1,0 +1,38 @@
+$min_width: $screen-md;
+$max_width: $screen-lg;
+$min_font: 10px;
+$max_font: 16px;
+
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
+body {
+  font-family: $font-primary;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+  color: $color-purple-extremely-dark;
+}
+
+h1 {
+  font-size: $font-size-6xl;
+}
+
+h2 {
+  font-size: $font-size-5xl;
+}
+
+h3 {
+  font-size: $font-size-3xl;
+}
+
+p {
+  font-size: $font-size-xl;
+  font-weight: 500;
+  line-height: 1.5;
+  color: $color-purple-very-dark;
+}

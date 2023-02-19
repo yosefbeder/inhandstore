@@ -1,13 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="modern-normalize.css" />
+    <link rel="stylesheet" href="styles/main.scss" />
+    <title>InHand Store</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <header class="header">
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <a href="#features">المميزات</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#reviews">التعليقات</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#faqs">أسئلة شائعة</a>
+        </li>
+      </ul>
+      <div class="header__hero">
+        <div class="header__content">
+          <img src="/logo-white.png" alt="Logo" class="header__logo" />
+          <div class="header__text">
+            <h1 class="header__title">ماركت إن هاند</h1>
+            <p class="header__slogan">
+              توفير فلوس ووقت وومجهود...
+              <br />
+              وكمان جودة!
+            </p>
+            <a
+              class="header__google-play-badge"
+              href="https://play.google.com/store/apps/details?id=com.inhandstore.cilent&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+            >
+              <img alt="Get it on Google Play" src="/google-play-badge.png" />
+            </a>
+          </div>
+        </div>
+        <img
+          class="header__screenshots"
+          src="/screenshots.png"
+          alt=""
+          srcset=""
+        />
+      </div>
+    </header>
   </body>
 </html>

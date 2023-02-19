@@ -1,0 +1,50 @@
+.language-switcher {
+  $height: 3rem;
+
+  display: flex;
+  align-items: center;
+  background-color: $color-purple-extremely-light;
+  font-size: $font-size-lg;
+  padding: $space-1;
+  border-radius: 1.5rem;
+
+  &__language {
+    color: $color-purple;
+    text-decoration: none;
+    padding: $space-2;
+    transition: background-color 300ms;
+
+    &:not(:last-child) {
+      margin-right: $space-1;
+    }
+
+    &:first-child {
+      border-radius: 1.5rem 0 0 1.5rem;
+    }
+
+    &:last-child {
+      border-radius: 0 1.5rem 1.5rem 0;
+    }
+
+    &:hover {
+      background-color: $color-purple-very-light;
+    }
+
+    &:active {
+      background-color: $color-purple-light;
+    }
+
+    &--selected {
+      background-color: $color-purple;
+      color: $color-purple-light;
+
+      &:hover {
+        background-color: $color-purple-dark;
+      }
+
+      &:active {
+        background-color: $color-purple-very-dark;
+      }
+    }
+  }
+}

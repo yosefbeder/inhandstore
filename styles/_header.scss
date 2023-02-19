@@ -1,0 +1,101 @@
+.header {
+  background: linear-gradient($color-purple, $color-purple-very-dark);
+
+  &__nav,
+  &__hero {
+    width: $screen-lg;
+    margin: 0 auto;
+
+    @media (max-width: $screen-lg) {
+      width: 100vw;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    list-style: none;
+    gap: $space-16;
+    padding: $space-4 $space-2;
+
+    @media (max-width: $screen-sm) {
+      gap: 0;
+      justify-content: space-around;
+    }
+  }
+
+  &__nav-item {
+    font-size: $font-size-2xl;
+    font-weight: 500;
+
+    & > a {
+      color: $color-purple-light;
+      text-decoration: none;
+      transition: color 300ms;
+
+      &:hover {
+        color: $color-purple-very-light;
+      }
+
+      &:active {
+        color: $color-purple-extremely-light;
+      }
+    }
+  }
+
+  &__hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $space-4 0 $space-8 $space-2;
+
+    @media (max-width: $screen-sm) {
+      flex-direction: column;
+      gap: $space-8;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: $space-8;
+
+    @media (max-width: $screen-sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    @media (max-width: $screen-sm) {
+      text-align: center;
+    }
+  }
+
+  &__logo {
+    height: 15rem;
+  }
+
+  &__title {
+    color: $color-purple-extremely-light;
+    margin-bottom: $space-2;
+  }
+
+  &__slogan {
+    color: $color-purple-very-light;
+    font-size: $font-size-2xl;
+    font-weight: 700;
+    margin-bottom: $space-8;
+  }
+
+  &__google-play-badge {
+    display: inline-block;
+    height: 3.5rem;
+
+    & > img {
+      height: 100%;
+    }
+  }
+
+  &__screenshots {
+    height: 30rem;
+  }
+}
