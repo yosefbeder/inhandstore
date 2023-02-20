@@ -1,5 +1,5 @@
 .header {
-  background: linear-gradient($color-purple, $color-purple-very-dark);
+  background: linear-gradient($color-purple, $color-purple-dark);
 
   &__nav {
     display: flex;
@@ -36,7 +36,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: $space-4 0 $space-8 $space-2;
+    padding: $space-4 $space-2 $space-8 $space-2;
 
     @media (max-width: $screen-sm) {
       flex-direction: column;
