@@ -7,10 +7,6 @@ html {
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
 }
 
-h1,
-h2,
-h3,
-p,
-ul {
-  margin: 0;
+details > summary {
+  cursor: pointer;
 }

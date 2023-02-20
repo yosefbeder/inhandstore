@@ -1,5 +1,21 @@
 body {
   font-family: $font-primary;
+  font-size: $font-size-xl;
+  font-weight: 500;
+  color: $color-purple-very-dark;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  line-height: 1.5;
 }
 
 h1,
@@ -21,9 +37,12 @@ h3 {
   font-size: $font-size-3xl;
 }
 
-p {
-  font-size: $font-size-xl;
-  font-weight: 500;
-  line-height: 1.5;
-  color: $color-purple-very-dark;
+ol {
+  list-style-type: arabic-indic;
+}
+
+p,
+li {
+  margin: $space-2 0;
+  max-width: 40rem;
 }

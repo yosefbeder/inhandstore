@@ -47,7 +47,6 @@
 
   &__content {
     display: flex;
-    align-items: center;
     gap: $space-8;
 
     @media (max-width: $screen-sm) {
@@ -55,30 +54,35 @@
     }
   }
 
+  &__logo {
+    height: 15rem;
+    object-fit: contain;
+  }
+
   &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     @media (max-width: $screen-sm) {
+      flex-direction: column;
+      gap: $space-8;
       text-align: center;
     }
   }
 
-  &__logo {
-    height: 15rem;
-  }
-
   &__title {
     color: $color-purple-extremely-light;
-    margin-bottom: $space-2;
   }
 
   &__slogan {
     color: $color-purple-very-light;
     font-size: $font-size-2xl;
     font-weight: 700;
-    margin-bottom: $space-8;
+    margin: 0;
   }
 
   &__google-play-badge {
-    display: inline-block;
     height: 3.5rem;
 
     & > img {

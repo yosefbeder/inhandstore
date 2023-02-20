@@ -58,6 +58,7 @@
   }
 }
 
+// todo: put them in _utils.scss instead
 .container {
   width: $screen-lg;
   margin: 0 auto;
@@ -103,5 +104,9 @@
 
   &__title {
     margin-bottom: $space-4;
+  }
+
+  &__description {
+    margin: 0;
   }
 }
