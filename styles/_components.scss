@@ -50,7 +50,7 @@
 }
 
 .section {
-  padding: $space-8 $space-2;
+  padding: $space-8 0;
 
   &__title {
     margin-bottom: $space-8;
@@ -61,6 +61,7 @@
 .container {
   width: $screen-lg;
   margin: 0 auto;
+  padding: 0 $space-2;
 
   @media (max-width: $screen-lg) {
     width: 100vw;
