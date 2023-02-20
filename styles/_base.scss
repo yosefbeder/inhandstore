@@ -1,3 +1,12 @@
+$min_width: $screen-md;
+$max_width: $screen-lg;
+$min_font: 12px;
+$max_font: 16px;
+
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
 h1,
 h2,
 h3,

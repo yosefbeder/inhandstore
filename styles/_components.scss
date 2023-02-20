@@ -61,7 +61,8 @@
 .container {
   width: $screen-lg;
   margin: 0 auto;
-  padding: 0 $space-2;
+  padding-left: $space-4;
+  padding-right: $space-4;
 
   @media (max-width: $screen-lg) {
     width: 100vw;
