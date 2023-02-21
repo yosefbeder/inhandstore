@@ -14,23 +14,10 @@
     }
   }
 
-  &__nav-item {
+  &__link {
     font-size: $font-size-2xl;
     font-weight: 500;
-
-    & > a {
-      color: $color-purple-light;
-      text-decoration: none;
-      transition: color 300ms;
-
-      &:hover {
-        color: $color-purple-very-light;
-      }
-
-      &:active {
-        color: $color-purple-extremely-light;
-      }
-    }
+    text-decoration: none;
   }
 
   &__hero {
