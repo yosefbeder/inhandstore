@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $space-4;
+  padding: $space-8 0;
+  background: linear-gradient($color-purple, $color-purple-dark);
+
+  &__logo {
+    height: 7.5rem;
+    object-fit: contain;
+  }
+
+  &__copyright {
+    color: $color-purple-light;
+    font-size: $font-size-sm;
+    max-width: 20rem;
+  }
+
+  &__icons {
+    display: flex;
+    gap: $space-4;
+  }
+
+  &__icon-link > svg {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
